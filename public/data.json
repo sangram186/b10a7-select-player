@@ -1,0 +1,134 @@
+[
+    {
+      "name": "Virat Kohli",
+      "country": "India",
+      "information": "Batsman",
+      "rating": 9.5,
+      "handedness": "Right-handed",
+      "price": 15000000,
+      "id": 1,
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Virat_Kohli.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Virat_Kohli.jpg/160px-Virat_Kohli.jpg"
+    },
+    {
+      "name": "Steve Smith",
+      "country": "Australia",
+      "information": "Batsman",
+      "rating": 9.2,
+      "handedness": "Right-handed",
+      "price": 14000000,
+      "id": 2,
+      "cover_image": "https://api.bdcrictime.com/steve-smith-07_03_2022.jpg",
+      "thumbnail": "https://s.ndtvimg.com//images/entities/120/steven-smith-1053.png"
+    },
+    {
+      "name": "Ben Stokes",
+      "country": "England",
+      "information": "All-rounder",
+      "rating": 9.0,
+      "handedness": "Left-handed",
+      "price": 13000000,
+      "id": 3,
+      "cover_image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1280,q_70/lsci/db/PICTURES/CMS/299200/299220.6.jpg",
+      "thumbnail": "https://images.crunchbase.com/image/upload/c_thumb,h_170,w_170,f_auto,g_face,z_0.7,b_white,q_auto:eco,dpr_1/b497b828c6574bab8e6a49d54148cdf9"
+    },
+    {
+      "name": "Jasprit Bumrah",
+      "country": "India",
+      "information": "Bowler",
+      "rating": 8.8,
+      "handedness": "Right-handed",
+      "price": 12000000,
+      "id": 4,
+      "cover_image": "https://static.tnn.in/thumb/msid-111292842,thumbsize-43926,width-1280,height-720,resizemode-75/111292842.jpg",
+      "thumbnail": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/319900/319940.2.png"
+    },
+    {
+      "name": "Kane Williamson",
+      "country": "New Zealand",
+      "information": "Batsman",
+      "rating": 9.3,
+      "handedness": "Right-handed",
+      "price": 14500000,
+      "id": 5,
+      "cover_image": "https://e0.365dm.com/24/06/1600x900/skysports-kane-williamson-new-zealand_6580201.jpg?20240613063517",
+      "thumbnail": "https://www.thefamouspeople.com/profiles/images/kane-williamson-1.jpg"
+    },
+    {
+      "name": "Rashid Khan",
+      "country": "Afghanistan",
+      "information": "Bowler",
+      "rating": 8.9,
+      "handedness": "Right-handed",
+      "price": 11000000,
+      "id": 6,
+      "cover_image": "https://api.bdcrictime.com/rashid-2-09_01_2025.jpg",
+      "thumbnail": "https://images.mykhel.com//webp/images/cricket/players/1/8141.jpg"
+    },
+    {
+      "name": "David Warner",
+      "country": "Australia",
+      "information": "Batsman",
+      "rating": 9.1,
+      "handedness": "Left-handed",
+      "price": 13500000,
+      "id": 7,
+      "cover_image": "https://crictoday.com/wp-content/uploads/2023/02/warner_player_of_the_tournamen_0_1200x768-1-1.jpg",
+      "thumbnail": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316500/316589.1.png"
+    },
+    {
+      "name": "Kagiso Rabada",
+      "country": "South Africa",
+      "information": "Bowler",
+      "rating": 8.7,
+      "handedness": "Right-handed",
+      "price": 11500000,
+      "id": 8,
+      "cover_image": "https://www.wisden.com/static-assets/waf-images/5b/ab/60/16-9/pM2CUr1gFw.jpg?v=23.07&w=1200",
+      "thumbnail": "https://xmlns.cricketnext.com/cktnxt/scorecard/crk_player_images/players/128X128/63611.png"
+    },
+    {
+      "name": "Jos Buttler",
+      "country": "England",
+      "information": "Batsman",
+      "rating": 8.6,
+      "handedness": "Right-handed",
+      "price": 12500000,
+      "id": 9,
+      "cover_image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1280,q_70/lsci/db/PICTURES/CMS/383800/383898.6.jpg",
+      "thumbnail": "https://images.crunchbase.com/image/upload/c_thumb,h_170,w_170,f_auto,g_face,z_0.7,b_white,q_auto:eco,dpr_1/69318084a5864e9a8506190846c693e2"
+    },
+    {
+      "name": "Shaheen Afridi",
+      "country": "Pakistan",
+      "information": "Bowler",
+      "rating": 8.5,
+      "handedness": "Left-handed",
+      "price": 10500000,
+      "id": 10,
+      "cover_image": "https://a-sports.tv/wp-content/uploads/2024/07/Shaheen-Afridi-breaks-silence-reports-altercation-Yousuf.jpg",
+      "thumbnail": "https://files.idyllic.app/files/static/201954?width=640&optimizer=image"
+    },
+    {
+      "name": "Quinton de Kock",
+      "country": "South Africa",
+      "information": "Batsman",
+      "rating": 8.4,
+      "handedness": "Left-handed",
+      "price": 10000000,
+      "id": 11,
+      "cover_image": "https://nonprod-media.webdunia.com/public_html/_media/en/img/article/2021-10/28/full/1635412854-4379.jpg",
+      "thumbnail": "https://xmlns.cricketnext.com/cktnxt/scorecard/crk_player_images/players/128X128/28035.png?im=Resize,width=300,aspect=fit,type=normal"
+    },
+    {
+      "name": "Hardik Pandya",
+      "country": "India",
+      "information": "All-rounder",
+      "rating": 8.3,
+      "handedness": "Right-handed",
+      "price": 9500000,
+      "id": 12,
+      "cover_image": "https://i.dawn.com/primary/2022/05/62947e5e5ad94.jpg",
+      "thumbnail": "https://xmlns.cricketnext.com/cktnxt/scorecard/crk_player_images/players/128X128/63751.png"
+    }
+  ]
