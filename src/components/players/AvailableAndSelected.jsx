@@ -4,7 +4,6 @@ import SelectedPlayers from "./SelectedPlayers";
 import PropTypes from "prop-types";
 
 const AvailableAndSelected = ({ balanceCoin, setBalanceCoin }) => {
-    // console.log(balanceCoin)
 
     const [players, setPlayers] = useState([]);
 
@@ -14,16 +13,12 @@ const AvailableAndSelected = ({ balanceCoin, setBalanceCoin }) => {
             .then(data => setPlayers(data))
     }, [])
 
-    // console.log(players)
     const [visibleSection, setVisibleSection] = useState('PlayerSection');
 
 
     const [getPlayer, setGetPlayer] = useState([]);
 
-    // const [uniquePlayer, setUniquePlayer] = useState([]);
-
     const selectedPlayers = (newPlayer) => {
-        // console.log(newPlayer.id)
 
         const isAlreadySelected = getPlayer.some(player => player.id === newPlayer.id);
         if (isAlreadySelected) {
@@ -42,10 +37,9 @@ const AvailableAndSelected = ({ balanceCoin, setBalanceCoin }) => {
     console.log(getPlayer)
 
     return (
-        <div>
-            <div className="flex justify-between mt-8 md:mt-12 items-center">
+        <div className="my-8 md:my-12">
+            <div className="flex justify-between  items-center">
                 <div>
-                    {/* <h1 className="text-2xl font-bold ">Available Players: {players.length}</h1> */}
                     <h1 className="text-2xl font-bold ">{visibleSection === 'PlayerSection' ? `Available Players ${players.length}` : `Selected Player (${getPlayer.length}/6)`}</h1>
                 </div>
                 <div className="flex border-2 border-gray-400 rounded-xl">
@@ -54,11 +48,15 @@ const AvailableAndSelected = ({ balanceCoin, setBalanceCoin }) => {
                     <button onClick={() => setVisibleSection('SelectedPlayers')} className={`py-2 px-3 rounded-r-xl font-bold cursor-pointer ${visibleSection === 'SelectedPlayers' ? 'bg-[#E7FE29] font-bold' : 'bg-white font-light'}`}>Selected <span>({getPlayer.length})</span></button>
                 </div>
             </div>
-            {/* <PlayerSection></PlayerSection> */}
             {visibleSection === 'PlayerSection' && <PlayerSection balanceCoin={balanceCoin} selectedPlayers={selectedPlayers} players={players}></PlayerSection>}
-            {visibleSection === 'SelectedPlayers' && <SelectedPlayers balanceCoin={balanceCoin} getPlayer={getPlayer}></SelectedPlayers>}
+            {visibleSection === 'SelectedPlayers' && getPlayer.map(player => <SelectedPlayers setVisibleSection={setVisibleSection} key={player.id} player={player}></SelectedPlayers>)}
 
 
+
+            {visibleSection === 'SelectedPlayers' &&
+                <div className="mt-6 border-2 inline-block rounded-xl">
+                    <button onClick={() => setVisibleSection('PlayerSection')} className="cursor-pointer bg-[#E7FE29] py-2 px-3 m-1 rounded-xl">Add More Player</button>
+                </div>}
         </div>
     );
 };

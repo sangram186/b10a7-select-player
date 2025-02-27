@@ -1,25 +1,9 @@
 import PropTypes from "prop-types";
 
-// {
-//     "name": "Shaheen Afridi",
-//     "country": "Pakistan",
-//     "information": "Bowler",
-//     "rating": 8.5,
-//     "handedness": "Left-handed",
-//     "price": 10500000,
-//     "id": 10,
-//     "cover_image": "https://a-sports.tv/wp-content/uploads/2024/07/Shaheen-Afridi-breaks-silence-reports-altercation-Yousuf.jpg",
-//     "thumbnail": "https://files.idyllic.app/files/static/201954?width=640&optimizer=image"
-//   }
-
 
 const Player = ({ player, selectedPlayers, balanceCoin }) => {
     const { name, country, information, rating, handedness, price, cover_image } = player;
 
-    // if(balanceCoin < price){
-    //     // alert('You dont have enough balance, get free credit!!')
-    // }
-   
     return (
         // ================Player Card===============
         <div className="p-4 border-2 border-gray-300 rounded-2xl space-y-6">
