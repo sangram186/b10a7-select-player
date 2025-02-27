@@ -1,7 +1,8 @@
 import banner from '../assets/images/bg-shadow.png'
 import bannerMain from '../assets/images/banner-main.png'
+import PropTypes from 'prop-types';
 
-const Banner = () => {
+const Banner = ({claimFreeCredit}) => {
     return (
         <div style={{ backgroundImage: `url(${banner})` }} className="h-[545px] bg-cover bg-no-repeat bg-black rounded-2xl">
             <div className='w-3/5 h-full  m-auto text-center space-y-4 md:space-y-8 flex-col content-center'>
@@ -15,14 +16,16 @@ const Banner = () => {
                             Claim Free Credit
                         </button> */}
                         {/* border-8 border-[#131313] */}
-                    <div className='bg-[#E7FE29] inline-block p-[1px] rounded-2xl cursor-pointer'>
+                    <div className='bg-[#E7FE29] inline-block p-[1px] rounded-2xl'>
                         <div className='bg-black rounded-2xl p-2'>
-                            <button className='bg-[#E7FE29] p-2 rounded-xl font-bold cursor-pointer'>Claim Free Credit</button>
+                            <button onClick={claimFreeCredit} className='bg-[#E7FE29] p-2 rounded-xl font-bold cursor-pointer'>Claim Free Credit</button>
                         </div>
                     </div>
             </div>
         </div>
     );
 };
-
+Banner.propTypes={
+    claimFreeCredit: PropTypes.number,
+}
 export default Banner;

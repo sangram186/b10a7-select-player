@@ -1,6 +1,13 @@
+
+import PropTypes from 'prop-types';
 import coin from '../assets/images/coin.png';
 import logo from '../assets/images/logo.png'
-const Header = () => {
+const Header = ({balanceCoin}) => {
+
+
+    
+
+
     return (
         <div className='h-[146px]'>
             <nav className='fixed top-0 w-10/12 mx-auto md:flex justify-between items-center py-4 md:py-6 z-50 bg-[#ffffff8c]'>
@@ -14,7 +21,7 @@ const Header = () => {
                         <li>Teams</li>
                         <li>Schedules</li>
                         <li>
-                            <span>0 coin <img className='w-5 inline' src={coin} alt="" /></span>
+                            <span className='font-bold border-2 border-gray-300 rounded-xl px-3 py-2'>{balanceCoin} coin <img className='w-5 inline' src={coin} alt="" /></span>
                         </li>
                     </ul>
                 </div>
@@ -22,5 +29,9 @@ const Header = () => {
         </div>
     );
 };
+
+Header.propTypes={
+    balanceCoin: PropTypes.number
+}
 
 export default Header;

@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
 
 // {
@@ -14,10 +13,13 @@ import PropTypes from "prop-types";
 //   }
 
 
-const Player = ({ player }) => {
+const Player = ({ player, selectedPlayers, balanceCoin }) => {
+    const { name, country, information, rating, handedness, price, cover_image } = player;
 
-    console.log(player)
-    const { name, country, information, rating, handedness, price, id, cover_image, thumbnail } = player;
+    // if(balanceCoin < price){
+    //     // alert('You dont have enough balance, get free credit!!')
+    // }
+   
     return (
         // ================Player Card===============
         <div className="p-4 border-2 border-gray-300 rounded-2xl space-y-6">
@@ -46,13 +48,15 @@ const Player = ({ player }) => {
             </div>
             <div className="flex justify-between">
                 <p className="font-bold">Price: ${price}</p>
-                <button className="px-2.5 py-1 border-2 border-gray-300 rounded-xl cursor-pointer">Choose Player</button>
+                <button onClick={() => selectedPlayers(player)} className="px-2.5 py-1 border-2 border-gray-300 rounded-xl cursor-pointer">Choose Player</button>
             </div>
         </div>
     );
 };
 
 Player.propTypes = {
-    player: PropTypes.object
+    player: PropTypes.object,
+    selectedPlayers: PropTypes.func,
+    balanceCoin: PropTypes.number
 }
 export default Player;
